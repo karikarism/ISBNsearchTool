@@ -37,19 +37,19 @@ namespace ISBNsearchTool
 
             //debug用
             //StatusBox.Text = ReadInfo;
-            string ReadInfo = @"{
+            string ReadInfo = @"[{
             ""kind"": ""books#volumes"",
             ""totalItems"": 1,
-            ""items"":
-            [
-              {
-               ""kind"": ""books#volume"",
-               ""id"": ""H7XQrQEACAAJ"",
-               ""etag"": ""iChwIDOVLeE""}]}"; //,
-            //""selfLink"": ""https://www.googleapis.com/books/v1/volumes/H7XQrQEACAAJ"",
-//               ""volumeInfo"": {
-//                ""title"": ""キタミ式イラストIT塾基本情報技術者"",
-//                ""subtitle"": """",
+            ""items"":1}]";
+            
+              //{
+              // ""kind"": ""books#volume"",
+              // ""id"": ""H7XQrQEACAAJ"",
+              // ""etag"": ""iChwIDOVLeE"",
+              // ""selfLink"": ""https://www.googleapis.com/books/v1/volumes/H7XQrQEACAAJ"",
+              // ""volumeInfo"": {
+              //  ""title"": ""キタミ式イラストIT塾基本情報技術者"",
+              //  ""subtitle"": """"}}}"; //,
 //                ""authors"": [
 //                 ""きたみりゅうじ""
 //                ],
@@ -113,8 +113,8 @@ namespace ISBNsearchTool
 //            ";
 
             //うまくいかない
-            var booksByJson = JsonConvert.DeserializeObject<GoogleBookAPI>(ReadInfo);
-            StatusBox.Text = booksByJson.items.etag;
+            var booksByJson = JsonConvert.DeserializeObject<GoogleBookAPI[]>(ReadInfo);
+            StatusBox.Text = booksByJson[0].items.ToString();
 
             //力技
             //var obj_from_json = JObject.Parse(ReadInfo);
@@ -162,22 +162,23 @@ namespace ISBNsearchTool
     {
         public string kind { get; set; }
         public int totalItems { get; set; }
-        public item items { get; set; }
+        public int items { get; set; }
     }
     class item
     {
         public string kind { get; set; }
         public string iD { get; set; }
         public string etag { get; set; }
-        //public string selfLink { get; set; }
-        //public volumeInfos VolumeInfo { get; set; }
+        public string selfLink { get; set; }
+        public volumeInfos VolumeInfo { get; set; }
         //public saleInfos SaleInfo { get; set; }
         //public accessInfos AccessInfo { get; set; }
         //public searchInfos SearchInfo { get; set; }
     }
     class volumeInfos
     {
-        public string Title { get; set; }
+        public string title { get; set; }
+        public string subtitle { get; set; }
         public Author Authors { get; set; }
         public string PublishedDate { get; set; }
         public string DescriptiondDate { get; set; }
