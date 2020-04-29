@@ -40,13 +40,13 @@ namespace ISBNsearchTool
             string ReadInfo = @"{
             ""kind"": ""books#volumes"",
             ""totalItems"": 1,
-            ""items"": ""test""}";
-            //[
-            //  {
-            //   ""kind"": ""books#volume"",
-            //   ""id"": ""H7XQrQEACAAJ"",
-            //   ""etag"": ""iChwIDOVLeE"",
-               //""selfLink"": ""https://www.googleapis.com/books/v1/volumes/H7XQrQEACAAJ"",
+            ""items"":
+            [
+              {
+               ""kind"": ""books#volume"",
+               ""id"": ""H7XQrQEACAAJ"",
+               ""etag"": ""iChwIDOVLeE""}]}"; //,
+            //""selfLink"": ""https://www.googleapis.com/books/v1/volumes/H7XQrQEACAAJ"",
 //               ""volumeInfo"": {
 //                ""title"": ""キタミ式イラストIT塾基本情報技術者"",
 //                ""subtitle"": """",
@@ -114,7 +114,7 @@ namespace ISBNsearchTool
 
             //うまくいかない
             var booksByJson = JsonConvert.DeserializeObject<GoogleBookAPI>(ReadInfo);
-            StatusBox.Text = booksByJson.items;
+            StatusBox.Text = booksByJson.items.etag;
 
             //力技
             //var obj_from_json = JObject.Parse(ReadInfo);
@@ -162,14 +162,14 @@ namespace ISBNsearchTool
     {
         public string kind { get; set; }
         public int totalItems { get; set; }
-        public string items { get; set; }
+        public item items { get; set; }
     }
     class item
     {
         public string kind { get; set; }
         public string iD { get; set; }
         public string etag { get; set; }
-        public string selfLink { get; set; }
+        //public string selfLink { get; set; }
         //public volumeInfos VolumeInfo { get; set; }
         //public saleInfos SaleInfo { get; set; }
         //public accessInfos AccessInfo { get; set; }
