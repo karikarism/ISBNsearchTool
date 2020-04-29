@@ -29,105 +29,105 @@ namespace ISBNsearchTool
         private void Searchbt_Click(object sender, EventArgs e)
         {
 
-            String url = "https://www.googleapis.com/books/v1/volumes?q=ISBN:" + ISBN.Text;
-            WebRequest request = WebRequest.Create(url);
-            Stream response_stream = request.GetResponse().GetResponseStream();
-            StreamReader reader = new StreamReader(response_stream);
-            string ReadInfo = reader.ReadToEnd();
+            //String url = "https://www.googleapis.com/books/v1/volumes?q=ISBN:" + ISBN.Text;
+            //WebRequest request = WebRequest.Create(url);
+            //Stream response_stream = request.GetResponse().GetResponseStream();
+            //StreamReader reader = new StreamReader(response_stream);
+            //string ReadInfo = reader.ReadToEnd();
 
             //debug用
             //StatusBox.Text = ReadInfo;
-            //            string ReadInfo = @"{
-            // ""kind"": ""books#volumes"",
-            // ""totalItems"": 1,
-            // ""items"": [
-            //  {
-            //   ""kind"": ""books#volume"",
-            //   ""id"": ""H7XQrQEACAAJ"",
-            //   ""etag"": ""iChwIDOVLeE"",
-            //   ""selfLink"": ""https://www.googleapis.com/books/v1/volumes/H7XQrQEACAAJ"",
-            //   ""volumeInfo"": {
-            //    ""title"": ""キタミ式イラストIT塾基本情報技術者"",
-            //    ""subtitle"": """",
-            //    ""authors"": [
-            //     ""きたみりゅうじ""
-            //    ],
-            //    ""publishedDate"": ""2015-01-20"",
-            //    ""description"": ""目で見てわかるから理解できる。だから合格できる!「このように出題されています」各節末に過去試験問題と解説を収録。新出題方式もキタミ式で大丈夫。"",
-            //    ""industryIdentifiers"": [
-            //     {
-            //      ""type"": ""ISBN_10"",
-            //      ""identifier"": ""4774170801""
-            //     },
-            //     {
-            //      ""type"": ""ISBN_13"",
-            //      ""identifier"": ""9784774170800""
-            //     }
-            //    ],
-            //    ""readingModes"": {
-            //     ""text"": false,
-            //     ""image"": false
-            //    },
-            //    ""pageCount"": 655,
-            //    ""printType"": ""BOOK"",
-            //    ""maturityRating"": ""NOT_MATURE"",
-            //    ""allowAnonLogging"": false,
-            //    ""contentVersion"": ""preview-1.0.0"",
-            //    ""imageLinks"": {
-            //     ""smallThumbnail"": ""http://books.google.com/books/content?id=H7XQrQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"",
-            //     ""thumbnail"": ""http://books.google.com/books/content?id=H7XQrQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api""
-            //    },
-            //    ""language"": ""ja"",
-            //    ""previewLink"": ""http://books.google.co.jp/books?id=H7XQrQEACAAJ&dq=ISBN:9784774170800&hl=&cd=1&source=gbs_api"",
-            //    ""infoLink"": ""http://books.google.co.jp/books?id=H7XQrQEACAAJ&dq=ISBN:9784774170800&hl=&source=gbs_api"",
-            //    ""canonicalVolumeLink"": ""https://books.google.com/books/about/%E3%82%AD%E3%82%BF%E3%83%9F%E5%BC%8F%E3%82%A4%E3%83%A9%E3%82%B9%E3%83%88IT%E5%A1%BE%E5%9F%BA%E6%9C%AC%E6%83%85.html?hl=&id=H7XQrQEACAAJ""
-            //   },
-            //   ""saleInfo"": {
-            //    ""country"": ""JP"",
-            //    ""saleability"": ""NOT_FOR_SALE"",
-            //    ""isEbook"": false
-            //   },
-            //   ""accessInfo"": {
-            //    ""country"": ""JP"",
-            //    ""viewability"": ""NO_PAGES"",
-            //    ""embeddable"": false,
-            //    ""publicDomain"": false,
-            //    ""textToSpeechPermission"": ""ALLOWED"",
-            //    ""epub"": {
-            //     ""isAvailable"": false
-            //    },
-            //    ""pdf"": {
-            //     ""isAvailable"": false
-            //    },
-            //    ""webReaderLink"": ""http://play.google.com/books/reader?id=H7XQrQEACAAJ&hl=&printsec=frontcover&source=gbs_api"",
-            //    ""accessViewStatus"": ""NONE"",
-            //    ""quoteSharingAllowed"": false
-            //   },
-            //   ""searchInfo"": {
-            //    ""textSnippet"": ""目で見てわかるから理解できる。だから合格できる!「このように出題されています」各節末に過去試験問題と解説を収録。新出題方式もキタミ式で大丈夫。""
-            //   }
-            //  }
-            // ]
-            //}
-            //";
-
+            string ReadInfo = @"{
+            ""kind"": ""books#volumes"",
+            ""totalItems"": 1,
+            ""items"": 1}";
+//[
+//              {
+//               ""kind"": ""books#volume"",
+//               ""id"": ""H7XQrQEACAAJ"",
+//               ""etag"": ""iChwIDOVLeE"",
+//               ""selfLink"": ""https://www.googleapis.com/books/v1/volumes/H7XQrQEACAAJ"",
+//               ""volumeInfo"": {
+//                ""title"": ""キタミ式イラストIT塾基本情報技術者"",
+//                ""subtitle"": """",
+//                ""authors"": [
+//                 ""きたみりゅうじ""
+//                ],
+//                ""publishedDate"": ""2015-01-20"",
+//                ""description"": ""目で見てわかるから理解できる。だから合格できる!「このように出題されています」各節末に過去試験問題と解説を収録。新出題方式もキタミ式で大丈夫。"",
+//                ""industryIdentifiers"": [
+//                 {
+//                  ""type"": ""ISBN_10"",
+//                  ""identifier"": ""4774170801""
+//                 },
+//                 {
+//                  ""type"": ""ISBN_13"",
+//                  ""identifier"": ""9784774170800""
+//                 }
+//                ],
+//                ""readingModes"": {
+//                 ""text"": false,
+//                 ""image"": false
+//                },
+//                ""pageCount"": 655,
+//                ""printType"": ""BOOK"",
+//                ""maturityRating"": ""NOT_MATURE"",
+//                ""allowAnonLogging"": false,
+//                ""contentVersion"": ""preview-1.0.0"",
+//                ""imageLinks"": {
+//                 ""smallThumbnail"": ""http://books.google.com/books/content?id=H7XQrQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"",
+//                 ""thumbnail"": ""http://books.google.com/books/content?id=H7XQrQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api""
+//                },
+//                ""language"": ""ja"",
+//                ""previewLink"": ""http://books.google.co.jp/books?id=H7XQrQEACAAJ&dq=ISBN:9784774170800&hl=&cd=1&source=gbs_api"",
+//                ""infoLink"": ""http://books.google.co.jp/books?id=H7XQrQEACAAJ&dq=ISBN:9784774170800&hl=&source=gbs_api"",
+//                ""canonicalVolumeLink"": ""https://books.google.com/books/about/%E3%82%AD%E3%82%BF%E3%83%9F%E5%BC%8F%E3%82%A4%E3%83%A9%E3%82%B9%E3%83%88IT%E5%A1%BE%E5%9F%BA%E6%9C%AC%E6%83%85.html?hl=&id=H7XQrQEACAAJ""
+//               },
+//               ""saleInfo"": {
+//                ""country"": ""JP"",
+//                ""saleability"": ""NOT_FOR_SALE"",
+//                ""isEbook"": false
+//               },
+//               ""accessInfo"": {
+//                ""country"": ""JP"",
+//                ""viewability"": ""NO_PAGES"",
+//                ""embeddable"": false,
+//                ""publicDomain"": false,
+//                ""textToSpeechPermission"": ""ALLOWED"",
+//                ""epub"": {
+//                 ""isAvailable"": false
+//                },
+//                ""pdf"": {
+//                 ""isAvailable"": false
+//                },
+//                ""webReaderLink"": ""http://play.google.com/books/reader?id=H7XQrQEACAAJ&hl=&printsec=frontcover&source=gbs_api"",
+//                ""accessViewStatus"": ""NONE"",
+//                ""quoteSharingAllowed"": false
+//               },
+//               ""searchInfo"": {
+//                ""textSnippet"": ""目で見てわかるから理解できる。だから合格できる!「このように出題されています」各節末に過去試験問題と解説を収録。新出題方式もキタミ式で大丈夫。""
+//               }
+//              }
+//             ]
+//            }
+//            ";
 
             //うまくいかない
-            //List<GoogleBookAPI> booksByJson = JsonConvert.DeserializeObject<List<GoogleBookAPI>>(ReadInfo);
-
+            var booksByJson = JsonConvert.DeserializeObject<GoogleBookAPI>(ReadInfo);
+            StatusBox.Text = booksByJson.items.ToString();
 
             //力技
-            var obj_from_json = JObject.Parse(ReadInfo);
-            string test = obj_from_json.GetValue("items").ToString();
-            int index = test.Replace("}\r\n  }", "散").IndexOf('散');
-            test = test.Substring(1, index+5);
-            var obj_from_json2 = JObject.Parse(test);
-            string volumeInfo = obj_from_json2.GetValue("volumeInfo").ToString();
-            var obj_from_json3 = JObject.Parse(volumeInfo);
-            string title = obj_from_json3.GetValue("title").ToString();
-            string authors = obj_from_json3.GetValue("authors").ToString();
-            authors = authors.Replace("[\r\n  \"","").Replace("\"\r\n]","");
-            MessageBox.Show(authors);
+            //var obj_from_json = JObject.Parse(ReadInfo);
+            //string test = obj_from_json.GetValue("items").ToString();
+            //int index = test.Replace("}\r\n  }", "散").IndexOf('散');
+            //test = test.Substring(1, index+5);
+            //var obj_from_json2 = JObject.Parse(test);
+            //string volumeInfo = obj_from_json2.GetValue("volumeInfo").ToString();
+            //var obj_from_json3 = JObject.Parse(volumeInfo);
+            //string title = obj_from_json3.GetValue("title").ToString();
+            //string authors = obj_from_json3.GetValue("authors").ToString();
+            //authors = authors.Replace("[\r\n  \"","").Replace("\"\r\n]","");
+            //MessageBox.Show(authors);
 
 
             /* 配列で計算する方法 */  
@@ -160,9 +160,9 @@ namespace ISBNsearchTool
     #region JSON Data定義
     class GoogleBookAPI
     {
-        public string Kind { get; set; }
-        public int TotalItems { get; set; }
-        public item Items { get; set; }
+        public string kind { get; set; }
+        public int totalItems { get; set; }
+        public int items { get; set; }
     }
     class item
     {
@@ -204,7 +204,7 @@ namespace ISBNsearchTool
     }
     class ISBNinfo
     {
-        public string Title { get; set; }
+        public string Type { get; set; }
         public string Identifier { get; set; }
     }
     class ReadingMode
