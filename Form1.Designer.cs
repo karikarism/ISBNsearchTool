@@ -32,6 +32,7 @@
             this.StatusBox = new System.Windows.Forms.TextBox();
             this.ISBN = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.Clearbt = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Searchbt
@@ -70,11 +71,22 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "ISBN(13桁)";
             // 
+            // Clearbt
+            // 
+            this.Clearbt.Location = new System.Drawing.Point(143, 60);
+            this.Clearbt.Name = "Clearbt";
+            this.Clearbt.Size = new System.Drawing.Size(75, 23);
+            this.Clearbt.TabIndex = 4;
+            this.Clearbt.Text = "Clear";
+            this.Clearbt.UseVisualStyleBackColor = true;
+            this.Clearbt.Click += new System.EventHandler(this.Clearbt_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Clearbt);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ISBN);
             this.Controls.Add(this.StatusBox);
@@ -92,6 +104,7 @@
         private System.Windows.Forms.TextBox StatusBox;
         private System.Windows.Forms.TextBox ISBN;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button Clearbt;
     }
 }
 

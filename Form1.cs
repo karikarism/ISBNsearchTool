@@ -24,8 +24,6 @@ namespace ISBNsearchTool
             InitializeComponent();
         }
 
-        string test;
-
         private void Searchbt_Click(object sender, EventArgs e)
         {
 
@@ -34,6 +32,9 @@ namespace ISBNsearchTool
             Stream response_stream = request.GetResponse().GetResponseStream();
             StreamReader reader = new StreamReader(response_stream);
             string ReadInfo = reader.ReadToEnd();
+            string ReadTitle = "";
+            string ReadAuthor = "";
+            string ReadVolume = "5";
 
             //debug用
             //StatusBox.Text = ReadInfo;
@@ -113,9 +114,31 @@ namespace ISBNsearchTool
 
             //うまくいかない
 
-            var booksByJson = JsonConvert.DeserializeObject<GoogleBookAPI>(ReadInfo);
+            var ReadInfoConverted = JsonConvert.DeserializeObject<GoogleBookAPI>(ReadInfo);
+            int TotalItems = ReadInfoConverted.totalItems;
+            for (int i = 0; i < TotalItems; i++)
+            {
+                if (null != ReadInfoConverted.items[i].VolumeInfo.authors)
+                {
+                    ReadTitle = ReadInfoConverted.items[i].VolumeInfo.title;
+                    ReadAuthor = ReadInfoConverted.items[i].VolumeInfo.authors[0];
+                    break;
+                }
+                if (i == TotalItems - 1)
+                    MessageBox.Show("No Item Hit!");
+            }
+            if (ReadTitle.Contains("("))
+            {
+                ReadVolume = ReadTitle.Split('(')[1].Replace(")", "").Trim();
+                ReadTitle = ReadTitle.Split('(')[0].Trim();
+            }
+            else if (ReadTitle.Contains(" "))
+            {
+                ReadVolume = ReadTitle.Split(' ')[1].Trim();
+                ReadTitle = ReadTitle.Split(' ')[0].Trim();
+            }
 
-            StatusBox.Text = booksByJson.items[0].VolumeInfo.title;
+            StatusBox.Text = "Title = " + ReadTitle + "(" + ReadVolume + ") , Author = " + ReadAuthor;
             
 
             //力技
@@ -156,6 +179,11 @@ namespace ISBNsearchTool
             //StatusBox.Text += "PublishDate = " + PublishDate + "\r\n";
 
 
+        }
+
+        private void Clearbt_Click(object sender, EventArgs e)
+        {
+            ISBN.Text = "";
         }
     }
 
