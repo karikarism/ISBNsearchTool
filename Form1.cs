@@ -29,92 +29,94 @@ namespace ISBNsearchTool
         private void Searchbt_Click(object sender, EventArgs e)
         {
 
-            //String url = "https://www.googleapis.com/books/v1/volumes?q=ISBN:" + ISBN.Text;
-            //WebRequest request = WebRequest.Create(url);
-            //Stream response_stream = request.GetResponse().GetResponseStream();
-            //StreamReader reader = new StreamReader(response_stream);
-            //string ReadInfo = reader.ReadToEnd();
+            String url = "https://www.googleapis.com/books/v1/volumes?q=ISBN:" + ISBN.Text;
+            WebRequest request = WebRequest.Create(url);
+            Stream response_stream = request.GetResponse().GetResponseStream();
+            StreamReader reader = new StreamReader(response_stream);
+            string ReadInfo = reader.ReadToEnd();
 
             //debug用
             //StatusBox.Text = ReadInfo;
-            string ReadInfo = @"[{
-            ""kind"": ""books#volumes"",
-            ""totalItems"": 1,
-            ""items"":1}]";
-            
-              //{
-              // ""kind"": ""books#volume"",
-              // ""id"": ""H7XQrQEACAAJ"",
-              // ""etag"": ""iChwIDOVLeE"",
-              // ""selfLink"": ""https://www.googleapis.com/books/v1/volumes/H7XQrQEACAAJ"",
-              // ""volumeInfo"": {
-              //  ""title"": ""キタミ式イラストIT塾基本情報技術者"",
-              //  ""subtitle"": """"}}}"; //,
-//                ""authors"": [
-//                 ""きたみりゅうじ""
-//                ],
-//                ""publishedDate"": ""2015-01-20"",
-//                ""description"": ""目で見てわかるから理解できる。だから合格できる!「このように出題されています」各節末に過去試験問題と解説を収録。新出題方式もキタミ式で大丈夫。"",
-//                ""industryIdentifiers"": [
-//                 {
-//                  ""type"": ""ISBN_10"",
-//                  ""identifier"": ""4774170801""
-//                 },
-//                 {
-//                  ""type"": ""ISBN_13"",
-//                  ""identifier"": ""9784774170800""
-//                 }
-//                ],
-//                ""readingModes"": {
-//                 ""text"": false,
-//                 ""image"": false
-//                },
-//                ""pageCount"": 655,
-//                ""printType"": ""BOOK"",
-//                ""maturityRating"": ""NOT_MATURE"",
-//                ""allowAnonLogging"": false,
-//                ""contentVersion"": ""preview-1.0.0"",
-//                ""imageLinks"": {
-//                 ""smallThumbnail"": ""http://books.google.com/books/content?id=H7XQrQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"",
-//                 ""thumbnail"": ""http://books.google.com/books/content?id=H7XQrQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api""
-//                },
-//                ""language"": ""ja"",
-//                ""previewLink"": ""http://books.google.co.jp/books?id=H7XQrQEACAAJ&dq=ISBN:9784774170800&hl=&cd=1&source=gbs_api"",
-//                ""infoLink"": ""http://books.google.co.jp/books?id=H7XQrQEACAAJ&dq=ISBN:9784774170800&hl=&source=gbs_api"",
-//                ""canonicalVolumeLink"": ""https://books.google.com/books/about/%E3%82%AD%E3%82%BF%E3%83%9F%E5%BC%8F%E3%82%A4%E3%83%A9%E3%82%B9%E3%83%88IT%E5%A1%BE%E5%9F%BA%E6%9C%AC%E6%83%85.html?hl=&id=H7XQrQEACAAJ""
-//               },
-//               ""saleInfo"": {
-//                ""country"": ""JP"",
-//                ""saleability"": ""NOT_FOR_SALE"",
-//                ""isEbook"": false
-//               },
-//               ""accessInfo"": {
-//                ""country"": ""JP"",
-//                ""viewability"": ""NO_PAGES"",
-//                ""embeddable"": false,
-//                ""publicDomain"": false,
-//                ""textToSpeechPermission"": ""ALLOWED"",
-//                ""epub"": {
-//                 ""isAvailable"": false
-//                },
-//                ""pdf"": {
-//                 ""isAvailable"": false
-//                },
-//                ""webReaderLink"": ""http://play.google.com/books/reader?id=H7XQrQEACAAJ&hl=&printsec=frontcover&source=gbs_api"",
-//                ""accessViewStatus"": ""NONE"",
-//                ""quoteSharingAllowed"": false
-//               },
-//               ""searchInfo"": {
-//                ""textSnippet"": ""目で見てわかるから理解できる。だから合格できる!「このように出題されています」各節末に過去試験問題と解説を収録。新出題方式もキタミ式で大丈夫。""
-//               }
-//              }
-//             ]
-//            }
-//            ";
+            //           string ReadInfo = @"{
+            //""kind"": ""books#volumes"",
+            //""totalItems"": 1,
+            //""items"": [
+            //	{
+            //		""kind"": ""books#volume"",
+            //		""id"": ""H7XQrQEACAAJ"",
+            //		""etag"": ""iChwIDOVLeE"",
+            //		""selfLink"": ""https://www.googleapis.com/books/v1/volumes/H7XQrQEACAAJ"",
+            //           ""volumeInfo"": {
+            //               ""title"": ""キタミ式イラストIT塾基本情報技術者"",
+            //			""subtitle"": ""test"",
+            //               ""authors"": [
+            //				""きたみりゅうじ""
+            //			],
+            //           ""publishedDate"": ""2015 - 01 - 20"",
+            //           ""description"": ""目で見てわかるから理解できる。だから合格できる!「このように出題されています」各節末に過去試験問題と解説を収録。新出題方式もキタミ式で大丈夫。"",
+            //           ""industryIdentifiers"": [
+            //           		{
+            //           			""type"": ""ISBN_10"",
+            //           			""identifier"": ""4774170801""
+
+            //                    },
+            //           	    {
+            //           			""type"": ""ISBN_13"",
+            //           			""identifier"": ""9784774170800""
+            //           		}
+            //           	],
+            //           ""readingModes"": {
+            //               ""text"": false,
+            //               ""image"": false
+            //               },
+            //           ""pageCount"": 655,
+            //           ""printType"": ""BOOK"",
+            //           ""maturityRating"": ""NOT_MATURE"",
+            //           ""allowAnonLogging"": false,
+            //           ""contentVersion"": ""preview - 1.0.0"",
+            //           ""imageLinks"": {
+            //               ""smallThumbnail"": ""http://books.google.com/books/content?id=H7XQrQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"",
+            //               ""thumbnail"": ""http://books.google.com/books/content?id=H7XQrQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api""
+            //               },
+            //           ""language"": ""ja"",
+            //           ""previewLink"": ""http://books.google.co.jp/books?id=H7XQrQEACAAJ&dq=ISBN:9784774170800&hl=&cd=1&source=gbs_api"",
+            //           ""infoLink"": ""http://books.google.co.jp/books?id=H7XQrQEACAAJ&dq=ISBN:9784774170800&hl=&source=gbs_api"",
+            //           ""canonicalVolumeLink"": ""https://books.google.com/books/about/%E3%82%AD%E3%82%BF%E3%83%9F%E5%BC%8F%E3%82%A4%E3%83%A9%E3%82%B9%E3%83%88IT%E5%A1%BE%E5%9F%BA%E6%9C%AC%E6%83%85.html?hl=&id=H7XQrQEACAAJ""
+            //               },
+            //          ""saleInfo"": {
+            //               ""country"": ""JP"",
+            //           	""saleability"": ""NOT_FOR_SALE"",
+            //           	""isEbook"": false
+            //           	},
+            //          ""accessInfo"": {
+            //               ""country"": ""JP"",
+            //               ""viewability"": ""NO_PAGES"",
+            //               ""embeddable"": false,
+            //               ""publicDomain"": false,
+            //               ""textToSpeechPermission"": ""ALLOWED"",
+            //               ""epub"": {
+            //                   ""isAvailable"": false
+            //                   },
+            //               ""pdf"": {
+            //                   ""isAvailable"": false
+            //           	    },
+            //               ""webReaderLink"": ""http://play.google.com/books/reader?id=H7XQrQEACAAJ&hl=&printsec=frontcover&source=gbs_api"",
+            //               ""accessViewStatus"": ""NONE"",
+            //               ""quoteSharingAllowed"": false
+            //           	    },
+            //           ""searchInfo"": {
+            //               ""textSnippet"": ""目で見てわかるから理解できる。だから合格できる!「このように出題されています」各節末に過去試験問題と解説を収録。新出題方式もキタミ式で大丈夫。""
+            //                       }
+            //           		}
+            //           	]
+            //           }";
 
             //うまくいかない
-            var booksByJson = JsonConvert.DeserializeObject<GoogleBookAPI[]>(ReadInfo);
-            StatusBox.Text = booksByJson[0].items.ToString();
+
+            var booksByJson = JsonConvert.DeserializeObject<GoogleBookAPI>(ReadInfo);
+
+            StatusBox.Text = booksByJson.items[0].VolumeInfo.title;
+            
 
             //力技
             //var obj_from_json = JObject.Parse(ReadInfo);
@@ -162,7 +164,7 @@ namespace ISBNsearchTool
     {
         public string kind { get; set; }
         public int totalItems { get; set; }
-        public int items { get; set; }
+        public item[] items { get; set; }
     }
     class item
     {
@@ -171,53 +173,46 @@ namespace ISBNsearchTool
         public string etag { get; set; }
         public string selfLink { get; set; }
         public volumeInfos VolumeInfo { get; set; }
-        //public saleInfos SaleInfo { get; set; }
-        //public accessInfos AccessInfo { get; set; }
-        //public searchInfos SearchInfo { get; set; }
+        public saleInfos SaleInfo { get; set; }
+        public accessInfos AccessInfo { get; set; }
+        public searchInfos SearchInfo { get; set; }
     }
     class volumeInfos
     {
         public string title { get; set; }
         public string subtitle { get; set; }
-        public Author Authors { get; set; }
+        public string[] authors { get; set; }
         public string PublishedDate { get; set; }
-        public string DescriptiondDate { get; set; }
-        public industryIdentifier IndustryIdentifiers { get; set; }
+        public string Description { get; set; }
+        public industryIdentifier[] IndustryIdentifiers { get; set; }
         public ReadingMode ReadingModes { get; set; }
         public int PageCount { get; set; }
         public string PrintType { get; set; }
         public string MaturityRating { get; set; }
         public bool AllowAnonLogging { get; set; }
         public string ContentVersion { get; set; }
-        public panelizationSummarys PanelizationSummary { get; set; }
+        public imageLink imageLinks { get; set; }
         public string Language { get; set; }
         public string PreviewLink { get; set; }
         public string InfoLink { get; set; }
         public string CanonicalVolumeLink { get; set; }
     }
-    class Author {
-        public string Authors { get; set; }
-    }
     class industryIdentifier
-    {
-        public ISBNinfo ISBN { get; set; }
-        public ISBNinfo ISBN_13 { get; set; }
-    }
-    class ISBNinfo
     {
         public string Type { get; set; }
         public string Identifier { get; set; }
     }
+
     class ReadingMode
     {
         public bool Text { get; set; }
         public bool Image { get; set; }
     }
-    class panelizationSummarys
+    class imageLink
     {
-        public bool ContainsEpubBubbles { get; set; }
+        public string smallThumbnail { get; set; }
 
-        public bool ContainsImageBubbles { get; set; }
+        public string thumbnail { get; set; }
     }
     class saleInfos
     {

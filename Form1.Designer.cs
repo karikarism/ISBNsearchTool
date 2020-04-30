@@ -59,7 +59,7 @@
             this.ISBN.Name = "ISBN";
             this.ISBN.Size = new System.Drawing.Size(100, 19);
             this.ISBN.TabIndex = 2;
-            this.ISBN.Text = "9784774170800";
+            this.ISBN.Text = "9784785963194";
             // 
             // label1
             // 

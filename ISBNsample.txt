@@ -1,0 +1,438 @@
+﻿{
+ "kind": "books#volumes",
+ "totalItems": 5,
+ "items": [
+  {
+   "kind": "books#volume",
+   "id": "rJc6wAEACAAJ",
+   "etag": "v+NbLt0iUfw",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/rJc6wAEACAAJ",
+   "volumeInfo": {
+    "title": "ヒダルとヒルダ",
+    "publishedDate": "2018",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_10",
+      "identifier": "4785963190"
+     },
+     {
+      "type": "ISBN_13",
+      "identifier": "9784785963194"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": false
+    },
+    "pageCount": 190,
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "language": "ja",
+    "previewLink": "http://books.google.co.jp/books?id=rJc6wAEACAAJ&dq=ISBN:9784785963194&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.co.jp/books?id=rJc6wAEACAAJ&dq=ISBN:9784785963194&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/%E3%83%92%E3%83%80%E3%83%AB%E3%81%A8%E3%83%92%E3%83%AB%E3%83%80.html?hl=&id=rJc6wAEACAAJ"
+   },
+   "saleInfo": {
+    "country": "JP",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "JP",
+    "viewability": "NO_PAGES",
+    "embeddable": false,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=rJc6wAEACAAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "NONE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "lM50DwAAQBAJ",
+   "etag": "L+AyBbl4+UE",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/lM50DwAAQBAJ",
+   "volumeInfo": {
+    "title": "ヒダルとヒルダ",
+    "authors": [
+     "鈴木小波"
+    ],
+    "publisher": "少年画報社",
+    "publishedDate": "2018-10-30",
+    "description": "人を食べないと死んでしまうタタリ神・ヒダル神にとり憑かれてしまった就活女子の蛭田さん。人間の代わりに日本各地の様々な美味しい食べ物を食べさせることに…腹ペコ神様とお憑かれ女子のほんわかグルメ旅！",
+    "industryIdentifiers": [
+     {
+      "type": "OTHER",
+      "identifier": "PKEY:BT000055972500100101900209"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "printType": "BOOK",
+    "categories": [
+     "Comics & Graphic Novels"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "1.1.1.0.preview.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": true,
+     "containsImageBubbles": true,
+     "epubBubbleVersion": "a2c2a7ac2a28c1bd_A",
+     "imageBubbleVersion": "a2c2a7ac2a28c1bd_A"
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=lM50DwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=lM50DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "ja",
+    "previewLink": "http://books.google.co.jp/books?id=lM50DwAAQBAJ&printsec=frontcover&dq=ISBN:9784785963194&hl=&cd=2&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=lM50DwAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://play.google.com/store/books/details?id=lM50DwAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "JP",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 550.0,
+     "currencyCode": "JPY"
+    },
+    "retailPrice": {
+     "amount": 495.0,
+     "currencyCode": "JPY"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=lM50DwAAQBAJ&rdid=book-lM50DwAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 5.5E8,
+       "currencyCode": "JPY"
+      },
+      "retailPrice": {
+       "amountInMicros": 4.95E8,
+       "currencyCode": "JPY"
+      }
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "JP",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.co.jp/books/download/%E3%83%92%E3%83%80%E3%83%AB%E3%81%A8%E3%83%92%E3%83%AB%E3%83%80-sample-epub.acsm?id=lM50DwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.co.jp/books/download/%E3%83%92%E3%83%80%E3%83%AB%E3%81%A8%E3%83%92%E3%83%AB%E3%83%80-sample-pdf.acsm?id=lM50DwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=lM50DwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "人を食べないと死んでしまうタタリ神・ヒダル神にとり憑かれてしまった就活女子の蛭田さん。人間の代わりに日本各地の様々な美味しい食べ物を食べさせることに…腹ペコ神様 ..."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "615MDwAAQBAJ",
+   "etag": "RWFR+LHryh0",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/615MDwAAQBAJ",
+   "volumeInfo": {
+    "title": "盛り合わせガール",
+    "authors": [
+     "鈴木小波"
+    ],
+    "publisher": "少年画報社",
+    "publishedDate": "2015-03-30",
+    "description": "白雪姫と70人の小人、白い魔女と雪見お茶、安楽椅子の解呪探偵など今回も魅力的な不思議ガールがアナタを不思議な世界に誘います。絶妙な感覚のオール読み切りダークコメディ！？",
+    "industryIdentifiers": [
+     {
+      "type": "OTHER",
+      "identifier": "PKEY:BT000035614600100101900209"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "printType": "BOOK",
+    "categories": [
+     "Comics & Graphic Novels"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "1.1.1.0.preview.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": true,
+     "containsImageBubbles": true,
+     "epubBubbleVersion": "c4ac55cc0ff471e0_A",
+     "imageBubbleVersion": "c4ac55cc0ff471e0_A"
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=615MDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=615MDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "ja",
+    "previewLink": "http://books.google.co.jp/books?id=615MDwAAQBAJ&printsec=frontcover&dq=ISBN:9784785963194&hl=&cd=3&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=615MDwAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://play.google.com/store/books/details?id=615MDwAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "JP",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 550.0,
+     "currencyCode": "JPY"
+    },
+    "retailPrice": {
+     "amount": 495.0,
+     "currencyCode": "JPY"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=615MDwAAQBAJ&rdid=book-615MDwAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 5.5E8,
+       "currencyCode": "JPY"
+      },
+      "retailPrice": {
+       "amountInMicros": 4.95E8,
+       "currencyCode": "JPY"
+      }
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "JP",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.co.jp/books/download/%E7%9B%9B%E3%82%8A%E5%90%88%E3%82%8F%E3%81%9B%E3%82%AC%E3%83%BC%E3%83%AB-sample-epub.acsm?id=615MDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.co.jp/books/download/%E7%9B%9B%E3%82%8A%E5%90%88%E3%82%8F%E3%81%9B%E3%82%AC%E3%83%BC%E3%83%AB-sample-pdf.acsm?id=615MDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=615MDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "白雪姫と70人の小人、白い魔女と雪見お茶、安楽椅子の解呪探偵など今回も魅力的な不思議ガールがアナタを不思議な世界に誘います。絶妙な感覚のオール読み切りダークコメデ ..."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "XUreDQAAQBAJ",
+   "etag": "FUWkyt2XtxM",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/XUreDQAAQBAJ",
+   "volumeInfo": {
+    "title": "新装版　ホクサイと飯",
+    "authors": [
+     "鈴木小波"
+    ],
+    "publisher": "講談社",
+    "publishedDate": "2017-01-20",
+    "description": "掲載誌の休刊に伴い終了した『ホクサイと飯』全1巻（KADOKAWA刊）、幻の同人誌『ホクサイと飯 おかわり』を完全収録♪ 『ホクサイと飯さえあれば』の8年後、漫画家になり仕事に追われる日々を過ごす山田ブン。だけど、ごはんへの情熱は変わりません！ もちろんホクサイも一緒♪ ここでしか読めない特別描き下ろしマンガもお楽しみに!!",
+    "industryIdentifiers": [
+     {
+      "type": "OTHER",
+      "identifier": "PKEY:BT000041951600100101900206"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "printType": "BOOK",
+    "categories": [
+     "Comics & Graphic Novels"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "1.3.3.0.preview.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": true,
+     "containsImageBubbles": true,
+     "epubBubbleVersion": "8ffa9c302ada9194_A",
+     "imageBubbleVersion": "8ffa9c302ada9194_A"
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=XUreDQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=XUreDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "ja",
+    "previewLink": "http://books.google.co.jp/books?id=XUreDQAAQBAJ&printsec=frontcover&dq=ISBN:9784785963194&hl=&cd=4&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=XUreDQAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://play.google.com/store/books/details?id=XUreDQAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "JP",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 660.0,
+     "currencyCode": "JPY"
+    },
+    "retailPrice": {
+     "amount": 660.0,
+     "currencyCode": "JPY"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=XUreDQAAQBAJ&rdid=book-XUreDQAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 6.6E8,
+       "currencyCode": "JPY"
+      },
+      "retailPrice": {
+       "amountInMicros": 6.6E8,
+       "currencyCode": "JPY"
+      }
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "JP",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.co.jp/books/download/%E6%96%B0%E8%A3%85%E7%89%88_%E3%83%9B%E3%82%AF%E3%82%B5%E3%82%A4%E3%81%A8%E9%A3%AF-sample-epub.acsm?id=XUreDQAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.co.jp/books/download/%E6%96%B0%E8%A3%85%E7%89%88_%E3%83%9B%E3%82%AF%E3%82%B5%E3%82%A4%E3%81%A8%E9%A3%AF-sample-pdf.acsm?id=XUreDQAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=XUreDQAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "掲載誌の休刊に伴い終了した『ホクサイと飯』全1巻（KADOKAWA刊）、幻の同人誌『ホクサイと飯 おかわり』を完全収録♪ ..."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "_wSEDwAAQBAJ",
+   "etag": "wjT+iqkiPRU",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/_wSEDwAAQBAJ",
+   "volumeInfo": {
+    "title": "魔女の箱庭と魔女の蟲籠 -鈴木小波短編集",
+    "authors": [
+     "鈴木小波"
+    ],
+    "publisher": "一迅社",
+    "publishedDate": "2016-02-01",
+    "description": "その姉弟の腹の中には、「永遠」と「死」があった。奇妙なふたりを描く連作のほか、短編を多数収録した、生と死を紡ぐ作品集。",
+    "industryIdentifiers": [
+     {
+      "type": "OTHER",
+      "identifier": "PKEY:BT000036243600100101900209"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 152,
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "1.1.1.0.preview.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": true,
+     "containsImageBubbles": true,
+     "epubBubbleVersion": "a58aa6abdea09852_A",
+     "imageBubbleVersion": "a58aa6abdea09852_A"
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=_wSEDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=_wSEDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "ja",
+    "previewLink": "http://books.google.co.jp/books?id=_wSEDwAAQBAJ&printsec=frontcover&dq=ISBN:9784785963194&hl=&cd=5&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=_wSEDwAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://play.google.com/store/books/details?id=_wSEDwAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "JP",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 550.0,
+     "currencyCode": "JPY"
+    },
+    "retailPrice": {
+     "amount": 495.0,
+     "currencyCode": "JPY"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=_wSEDwAAQBAJ&rdid=book-_wSEDwAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 5.5E8,
+       "currencyCode": "JPY"
+      },
+      "retailPrice": {
+       "amountInMicros": 4.95E8,
+       "currencyCode": "JPY"
+      }
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "JP",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.co.jp/books/download/%E9%AD%94%E5%A5%B3%E3%81%AE%E7%AE%B1%E5%BA%AD%E3%81%A8%E9%AD%94%E5%A5%B3%E3%81%AE%E8%9F%B2%E7%B1%A0_%E9%88%B4%E6%9C%A8-sample-epub.acsm?id=_wSEDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.co.jp/books/download/%E9%AD%94%E5%A5%B3%E3%81%AE%E7%AE%B1%E5%BA%AD%E3%81%A8%E9%AD%94%E5%A5%B3%E3%81%AE%E8%9F%B2%E7%B1%A0_%E9%88%B4%E6%9C%A8-sample-pdf.acsm?id=_wSEDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=_wSEDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "その姉弟の腹の中には、「永遠」と「死」があった。奇妙なふたりを描く連作のほか、短編を多数収録した、生と死を紡ぐ作品集。"
+   }
+  }
+ ]
+}
